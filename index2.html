@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--CABECERA-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Diego M." />
+    <meta name="description" content="Pequeño homenaje a Lionel Messi" />
+    <meta name="keywords" content="futbol, messi, lionel, lionel messi" />
+    <link rel="icon" href="/img/icono.jpg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--FONTS DE GOOGLE-->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style2.css" />
+    <!--Titulo-->
+    <title>HTML + CSS + Responsive: Homenaje a Messi</title>
+</head>
+
+<body>
+    <!-- cabecera y menu de navegación -->
+    <section id="home">
+        <div class="content">
+            <div>
+                <h2>Lionel Messi</h2>
+                <p>El mejor judador de futbol de la historia mundial</p>
+                <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank">Mas información</a>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="./img/leo_portada.png" alt="Imagen de fodo de Leo Messi" />
+        </div>
+        <ul id="nav" class="nav">
+            <li><a href="#home" class="active" onclick="menuClose()">Home</a></li>
+            <li><a href="#about" onclick="menuClose()">About</a></li>
+            <li><a href="#premios" onclick="menuClose()">Premios</a></li>
+            <li><a href="#imagenes" onclick="menuClose()">Imagenes</a></li>
+        </ul>
+    </section>
+
+    <span id="toggle" class="menu" onclick="menuToggle()"></span>
+    <script type="text/javascript">
+        function menuToggle() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active');
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active');
+        }
+        function menuClose() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active');
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active');
+        }
+    </script>
+
+
+    <!-- información general -->
+    <div id="about" class="info">
+        <p>
+            Conocido como Leo Messi, es un futbolista argentino que juega como
+            delantero o centrocampista. Ha desarrollado toda su carrera en el F.
+            C. Barcelona de la Primera División de España y en la selección de
+            Argentina, equipos de los que es capitán. Considerado con frecuencia
+            el mejor jugador del mundo y uno de los mejores de todos los tiempos,
+            es el único futbolista en la historia que ha ganado, entre otras
+            distinciones, seis veces el Balón de Oro (dos Balones de Oro y cuatro
+            FIFA Balones de Oro), los cuatro primeros de forma consecutiva, además
+            de recibir seis Botas de Oro, un FIFA World Player, y un The Best
+            FIFA. En 2020, se convirtió en el primer futbolista en recibir un
+            premio Laureus.
+        </p>
+        <p>
+            Nacido y criado en la ciudad de Rosario, a los 13 años se radicó en
+            España, donde el Barcelona accedió a pagar el tratamiento de la
+            enfermedad hormonal que le habían diagnosticado de niño.​ Después de
+            una rápida progresión a través de la Academia juvenil del Barcelona,​
+            hizo su debut oficial con el primer equipo a los 17 años, en octubre
+            de 2004. A pesar de ser propenso a lesiones en los inicios de su
+            carrera, se estableció como jugador fundamental para el club. En 2007,
+            fue finalista del Balón de Oro y del Jugador Mundial de la FIFA, logro
+            que repitió en 2008. Su primera campaña ininterrumpida fue la
+            temporada 2008-09, durante la que con el Barcelona alcanzó el primer
+            triplete del fútbol español. A los 22 años, ganó su primer Balón de
+            Oro y el premio al Jugador Mundial de la FIFA del año.
+        </p>
+        <p>
+            Siguieron tres temporadas exitosas, en las que Messi ganó tres FIFA
+            Balón de Oro, con lo que sumó cuatro, hecho que no tenía
+            precedentes.Hasta el momento, su mejor campaña personal es la
+            temporada 2011-12, en la que estableció el récord de más goles en una
+            temporada, tanto en La Liga como en otras competiciones europeas, y se
+            convirtió, en marzo de 2012, en el máximo goleador histórico de su
+            club en competiciones oficiales. Durante las dos siguientes
+            temporadas, también sufrió lesiones, y perdió el Balón de Oro frente a
+            Cristiano Ronaldo, a quien se considera su rival. Messi recuperó su
+            mejor forma durante la campaña 2014-15, en la que superó los registros
+            de máximo goleador absoluto en La Liga y la Liga de Campeones;
+            conquistó con el Barcelona un histórico segundo triplete, y además su
+            quinto Balón de Oro. Se hizo con la capitanía del equipo en 2018, y en
+            2019 se aseguró su sexto Balón de Oro. El 14 de diciembre de 2020 fue
+            incluido como extremo derecho en el Dream Team histórico del Balón De
+            Oro.
+        </p>
+    </div>
+    <!-- premios, campeonatos -->
+    <div id="premios">
+        <div class="box">
+            <div class="box-effect"></div>
+            <div class="container">
+                <h3>Distinciones individuales</h3>
+                <ul>
+                    <li><strong>2009</strong> - Balón de Oro 2009</li>
+                    <li><strong>2010</strong> - FIFA Balón de Oro 2010</li>
+                    <li><strong>2010</strong> - Bota de Oro 2009-10</li>
+                    <li><strong>2011</strong> - FIFA Balón de Oro 2011</li>
+                    <li><strong>2012</strong> - FIFA Balón de Oro 2012</li>
+                    <li><strong>2012</strong> - Bota de Oro 2011-12</li>
+                    <li><strong>2013</strong> - Bota de Oro 2012-13</li>
+                    <li><strong>2015</strong> - FIFA Balón de Oro 2015</li>
+                    <li><strong>2017</strong> - Bota de Oro 2016-17</li>
+                    <li><strong>2018</strong> - Bota de Oro 2017-18</li>
+                    <li><strong>2019</strong> - Bota de Oro 2018-19</li>
+                    <li><strong>2019</strong> - The Best FIFA 2019</li>
+                    <li><strong>2019</strong> - Balón de Oro 2019</li>
+                    <li><strong>2020</strong> - Premio Laureus</li>
+                    <li><strong>2020</strong> - Once histórico del Balón de Oro</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-effect"></div>
+            <div class="container">
+                <h3>Campeonatos Nacionales</h3>
+                <ul>
+                    <li><strong>2004-05</strong> - Primera División de España</li>
+                    <li><strong>2005</strong> - Supercopa de España</li>
+                    <li><strong>2005-06</strong> - Primera División de España</li>
+                    <li><strong>2006</strong> - Supercopa de España</li>
+                    <li><strong>2008-09</strong> - Copa del Rey</li>
+                    <li><strong>2008-09</strong> - Primera División de España</li>
+                    <li><strong>2009</strong> - Supercopa de España</li>
+                    <li><strong>2009-10</strong> - Primera División de España</li>
+                    <li><strong>2010-11</strong> - Primera División de España</li>
+                    <li><strong>2011</strong> - Supercopa de España</li>
+                    <li><strong>2011-12</strong> - Copa del Rey</li>
+                    <li><strong>2012-13</strong> - Primera División de España</li>
+                    <li><strong>2013</strong> - Supercopa de España</li>
+                    <li><strong>2014-15</strong> - Primera División de España</li>
+                    <li><strong>2014-15</strong> - Copa del Rey</li>
+                    <li><strong>2015-16</strong> - Primera División de España</li>
+                    <li><strong>2015-16</strong> - Copa del Rey</li>
+                    <li><strong>2016</strong> - Supercopa de España</li>
+                    <li><strong>2016-17</strong> - Copa del Rey</li>
+                    <li><strong>2017-18</strong> - Primera División de España</li>
+                    <li><strong>2017-18</strong> - Copa del Rey</li>
+                    <li><strong>2018</strong> - Supercopa de España</li>
+                    <li><strong>2018-19</strong> - Primera División de España</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-effect"></div>
+            <div class="container">
+                <h3>Campeonatos Internacionales</h3>
+                <ul>
+                    <li><strong>2005</strong> - Copa Mundial Sub-20</li>
+                    <li><strong>2005-06</strong> - Liga de Campeones</li>
+                    <li><strong>2008</strong> - Torneo Olímpico de Fútbol</li>
+                    <li><strong>2009</strong> - Liga de Campeones</li>
+                    <li><strong>2009</strong> - Copa Mundial de Clubes</li>
+                    <li><strong>2010-11</strong> - Liga de Campeones</li>
+                    <li><strong>2011</strong> - Supercopa de Europa</li>
+                    <li><strong>2011</strong> - Copa Mundial de Clubes</li>
+                    <li><strong>2014-15</strong> - Liga de Campeones</li>
+                    <li><strong>2015</strong> - Supercopa de Europa</li>
+                    <li><strong>2015</strong> - Copa Mundial de Clubes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- imagenes -->
+    <div id="imagenes" class="imagenes">
+        <div class="imagen-box">
+            <img src="./img/leo4.jpg" alt="Leo Barcelona" />
+        </div>
+        <div class="imagen-box">
+            <img src="./img/leo3.jpg" alt="Leo Barcelona" />
+        </div>
+        <div class="imagen-box">
+            <img src="./img/leo2.jpg" alt="Leo Barcelona" />
+        </div>
+        <div class="imagen-box">
+            <img src="./img/leo1.jpg" alt="Leo Barcelona" />
+        </div>
+    </div>
+    <!-- pie de pagina -->
+    <div class="pie">
+        <p>All Rights Reserved 2021</p>
+    </div>
+</body>
+
+</html>
